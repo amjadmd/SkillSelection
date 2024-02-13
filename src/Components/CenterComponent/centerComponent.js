@@ -4,7 +4,7 @@ import { CoreSkills, CreativeSkills, SpecialSkills } from "../constant";
 
 function CenterComponent() {
   const SkillSelection = ({ skill ,place}) => {
-    const [drag] = useDrag(() => ({
+    const [{ isDragging }, drag] = useDrag(() => ({
       type: "skill",
       item: { id: skill.id },
       collect: (monitor) => ({

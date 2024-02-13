@@ -8,6 +8,7 @@ function RightComponent() {
   const [homeSkills, setHomeSkills] = useState([]);
 
   const addSkill = (data, place) => {
+    console.log(data, "dropdata");
     const newData = [
       ...CoreSkills,
       ...CreativeSkills,
@@ -31,7 +32,7 @@ function RightComponent() {
     }
   };
   const SkillDrop = ({ skill, place }) => {
-    const [drag] = useDrag(() => ({
+    const [{ isDragging }, drag] = useDrag(() => ({
       type: "skill",
       item: { id: skill.id },
       collect: (monitor) => ({
@@ -61,7 +62,7 @@ function RightComponent() {
     );
   };
   const SchoolSkills = () => {
-    const [drop] = useDrop(() => ({
+    const [{ isOver }, drop] = useDrop(() => ({
       accept: "skill",
       drop: (item) => addSkill(item.id, "school"),
       collect: (monitor) => ({
@@ -80,7 +81,7 @@ function RightComponent() {
     );
   };
   const HomeSkills = () => {
-    const [drop] = useDrop(() => ({
+    const [{ isOver }, drop] = useDrop(() => ({
       accept: "skill",
       drop: (item) => addSkill(item.id, "home"),
       collect: (monitor) => ({
