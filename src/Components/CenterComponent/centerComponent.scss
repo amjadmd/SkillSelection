@@ -1,0 +1,60 @@
+.center-component-heading {
+    font-size: 1.5rem;
+    color: white;
+    background: #1e2773;
+    border-radius: 5px 5px 0 0;
+    padding: 0.5rem;
+}
+
+
+.center-component-body-container-level {
+    margin: 1rem;
+    border: 1px solid #fff;
+    height: auto;
+    display: flex;
+    color: #676565;
+    background: #e1eaf7;
+    border-radius: 1rem;
+}
+
+.levels-container {
+    width: 100%;
+    margin: 1rem;
+
+    .skill-container {
+        margin: 0.5rem;
+        border-radius: .5rem;
+        background: #fff;
+        padding: .5rem;
+        display: flex;
+        flex-wrap: wrap;
+        width: auto;
+    }
+
+    .skill {
+        padding: 0.2rem .5rem;
+        font-size: .8rem;
+        font-weight: 400;
+        color: #5a5d61;
+        border-radius: .5rem;
+        margin: 0.5rem;
+        width: auto;
+        cursor: pointer;
+    }
+    .core {
+        border: 1px solid #71ca00;
+        background: #edfed7;
+
+
+    }
+
+    .special {
+        border: 1px solid #fa8f8f;
+        background: #feebeb;
+    }
+
+    .creative {
+        border: 1px solid #e150e4;
+        background: #fde7fd;
+    }
+}

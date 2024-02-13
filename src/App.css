@@ -1,0 +1,29 @@
+.school-skills-app {
+  background: #d9d9d9; 
+}
+.school-skills-container{
+  display: flex;
+  padding: 1.5rem;
+  gap: 1rem;
+}
+.school-skills-app-container{
+  border: 1px solid #becae4;
+  border-radius:5px;
+}
+.component-body-container {
+  background: #f8fafd;
+  height: 92%;
+  padding: 1rem;
+  border-radius: 0 0 0.3rem 0.3rem;
+}
+.left{
+  width:20%;
+}
+.center{
+  width: 45%;
+}
+.right{
+  width: 35%;
+}
+
+
